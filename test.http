@@ -1,0 +1,65 @@
+//testes para aluno
+
+POST http://localhost:3000/alunos
+Content-Type: application/json
+
+{
+    "nome": "Layza",
+    "email": "layza@email.com"
+}
+
+###
+
+GET http://localhost:3000/alunos/0
+
+###
+PUT http://localhost:3000/alunos/0
+Content-Type: application/json
+
+{
+    "nome": "Layza Emmanuelle",
+    "email": "layza@novoemail.com"
+}
+###
+PATCH http://localhost:3000/alunos/0
+Content-Type: application/json
+
+{
+    "nome": "Layza"
+}
+
+###
+DELETE http://localhost:3000/alunos/0
+
+//teste para cursos
+
+###
+POST http://localhost:3000/cursos
+Content-Type: application/json
+
+{
+    "nome": "Programação Web",
+    "descricao": "Curso ministrado por Diego Castro"
+}
+
+###
+GET http://localhost:3000/cursos
+
+###
+PUT http://localhost:3000/cursos/0
+Content-Type: application/json
+
+{
+    "nome": "Programação Web Avançada",
+    "descricao": "Disciplina ministrada pelo professor Diego Castro"
+}
+
+###
+PATCH http://localhost:3000/cursos/0
+Content-Type: application/json
+
+{
+    "nome": "Programação Web"
+}
+###
+DELETE http://localhost:3000/cursos/0
