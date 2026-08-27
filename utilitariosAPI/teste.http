@@ -1,0 +1,90 @@
+### 1. Somar
+POST http://localhost:3000/somar
+Content-Type: application/json
+
+{
+    "numeros": [10, 20, 30, 40]
+}
+
+
+### 2. Média
+POST http://localhost:3000/media
+Content-Type: application/json
+
+{
+    "numeros": [7, 8, 9, 10]
+}
+
+
+### 3. Maior e menor
+POST http://localhost:3000/maior-menor
+Content-Type: application/json
+
+{
+    "numeros": [10, 25, 50, 15, 30]
+}
+
+
+### 4. Bhaskara
+POST http://localhost:3000/bhaskara
+Content-Type: application/json
+
+{
+    "a": 1,
+    "b": -5,
+    "c": 6
+}
+
+
+### 5. Fibonacci
+POST http://localhost:3000/fibonacci
+Content-Type: application/json
+
+{
+    "numero": 10
+}
+
+
+### 6. Primo
+POST http://localhost:3000/primo
+Content-Type: application/json
+
+{
+    "numero": 17
+}
+
+
+### 7. Fatorial
+POST http://localhost:3000/fatorial
+Content-Type: application/json
+
+{
+    "numero": 5
+}
+
+
+### 8. Inverter
+POST http://localhost:3000/inverter
+Content-Type: application/json
+
+{
+    "texto": "express"
+}
+
+
+### 9. Contar palavras
+POST http://localhost:3000/contar-palavras
+Content-Type: application/json
+
+{
+    "texto": "Aprender Node.js e Express"
+}
+
+
+### 10. Palíndromo
+POST http://localhost:3000/palindromo
+Content-Type: application/json
+
+{
+    "texto": "arara"
+}
