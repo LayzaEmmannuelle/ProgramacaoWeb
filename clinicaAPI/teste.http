@@ -1,0 +1,149 @@
+### Cadastrar médico
+POST http://localhost:3000/medicos
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "especialidade": "Cardiologia"
+}
+
+### Listar médicos
+GET http://localhost:3000/medicos
+
+### Atualizar médico
+PUT http://localhost:3000/medicos/0
+Content-Type: application/json
+
+{
+    "nome": "João Silva",
+    "especialidade": "Neurologia"
+}
+
+### Atualizar parcialmente
+PATCH http://localhost:3000/medicos/0
+Content-Type: application/json
+
+{
+    "especialidade": "Cardiologia"
+}
+
+### Deletar médico
+DELETE http://localhost:3000/medicos/0
+
+
+
+### Cadastrar paciente
+POST http://localhost:3000/pacientes
+Content-Type: application/json
+
+{
+    "nome": "Maria",
+    "email": "maria@email.com"
+}
+
+### Listar pacientes
+GET http://localhost:3000/pacientes
+
+
+### Atualizar paciente
+PUT http://localhost:3000/pacientes/0
+Content-Type: application/json
+
+{
+    "nome": "Maria Silva",
+    "email": "mariasilva@email.com"
+}
+
+### Atualizar parcialmente paciente
+PATCH http://localhost:3000/pacientes/0
+Content-Type: application/json
+
+{
+    "email": "maria.novo@email.com"
+}
+
+### Deletar paciente
+DELETE http://localhost:3000/pacientes/0
+
+### Cadastrar consulta
+POST http://localhost:3000/consultas
+Content-Type: application/json
+
+{
+    "medicoId": 0,
+    "pacienteId": 0,
+    "data": "2026-08-28 14:00"
+}
+
+### Testar horário ocupado
+POST http://localhost:3000/consultas
+Content-Type: application/json
+
+{
+    "medicoId": 0,
+    "pacienteId": 0,
+    "data": "2026-08-28 14:00"
+}
+
+### Listar consultas
+GET http://localhost:3000/consultas/0
+
+### Editar consulta
+PUT http://localhost:3000/consultas/0
+Content-Type: application/json
+
+{
+    "medicoId": 0,
+    "pacienteId": 0,
+    "data": "2026-08-28 16:00"
+}
+
+### Alterar parcialmente a consulta
+PATCH http://localhost:3000/consultas/0
+Content-Type: application/json
+
+{
+    "data": "2026-08-28 17:00"
+}
+
+### Deletar consulta
+DELETE http://localhost:3000/consultas/0
+
+### Buscar médico com consultas
+GET http://localhost:3000/medicos/0
+
+### Cadastrar médico
+POST http://localhost:3000/medicos
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "especialidade": "Cardiologia"
+}
+
+### Cadastrar paciente
+POST http://localhost:3000/pacientes
+Content-Type: application/json
+
+{
+    "nome": "Maria",
+    "email": "maria@email.com"
+}
+
+### Criar consulta
+POST http://localhost:3000/consultas
+Content-Type: application/json
+
+{
+    "medicoId": 0,
+    "pacienteId": 0,
+    "data": "2026-08-28 18:00"
+}
+#### Listar consultas
+GET http://localhost:3000/consultas
+
+### Buscar médico com consultas
+GET http://localhost:3000/medicos/0
+
+#### Buscar paciente com consultas
+GET http://localhost:3000/pacientes/0
